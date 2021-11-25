@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sunglasses</title>
+</head>
+<body>
+	<div class="sunglasses">
+		<div class="rod1"></div>
+		<div class="rod2"></div>
+	<div class="lense1">
+		<div class="glow1"></div>
+		<div class="glow2"></div>
+		<div class="glow3"></div>
+	</div>
+	<div class="lense2"></div>
+</div>
+</body>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			transform-style: preserve-3d;
+		}
+
+		.lense1{
+			width: 200px;
+			height: 150px;
+			background: #111;
+			position: absolute;
+			left: 100px;
+			top: 200px;
+			border-bottom-right-radius: 200px;
+			border-bottom-left-radius: 200px;
+		}
+		.lense2{
+			width: 200px;
+			height: 150px;
+			background: #111;
+			position: absolute;
+			left: 350px;
+			top: 200px;
+			border-bottom-right-radius: 200px;
+			border-bottom-left-radius: 200px;
+		}
+		.rod1{
+			width: 500px;
+			height: 10px;
+			background: silver;
+			position: absolute;
+			left: 75px;
+			top: 200px;
+		}
+
+		.rod2{
+			width: 450px;
+			height: 10px;
+			background: silver;
+			position: absolute;
+			left: 100px;
+			top: 220px;
+		}
+
+		.glow1{
+			width: 30px;
+			height: 800px;
+			background: #fff;
+			opacity: .5;
+			position: absolute;
+			top: -600px;
+			left: 50px;
+			transform: rotate(45deg) translateZ(2px);
+			animation: glowA 6s infinite 0s;
+		}
+		@keyframes glowA{
+			from{
+				top: -600px;
+				left: 50px;
+			}
+			to{
+				top: 100px;
+				left: 300px;
+			}
+		}
+
+		.glow2{
+			width: 10px;
+			height: 800px;
+			background: #fff;
+			opacity: .5;
+			position: absolute;
+			top: -600px;
+			left: 50px;
+			transform: rotate(45deg) translateZ(2px);
+			animation: glowA 6s infinite .5s;
+		}
+		@keyframes glowA{
+			from{
+				top: -600px;
+				left: 50px;
+			}
+			to{
+				top: 100px;
+				left: 300px;
+			}
+		}
+
+		.glow3{
+			width: 20px;
+			height: 800px;
+			background: #fff;
+			opacity: .5;
+			position: absolute;
+			top: -600px;
+			left: 50px;
+			transform: rotate(45deg) translateZ(2px);
+			animation: glowA 6s infinite 2s;
+		}
+		@keyframes glowA{
+			from{
+				top: -600px;
+				left: 50px;
+			}
+			to{
+				top: 100px;
+				left: 300px;
+			}
+		}
+	</style>
+</html>
